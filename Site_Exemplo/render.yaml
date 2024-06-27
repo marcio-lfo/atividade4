@@ -4,5 +4,5 @@ services:
     env: php
     plan: free
     branch: main
-    buildCommand: echo "Build step not required"
-    startCommand: php -S 0.0.0.0:10000 -t .
+    buildCommand: composer install --prefer-dist --no-progress --no-suggest
+    startCommand: vendor/bin/heroku-php-apache2
