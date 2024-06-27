@@ -27,7 +27,7 @@ header("X-XSS-Protection: 1; mode=block");
     <div class="container">
         <?php
             // Exibindo uma mensagem de boas-vindas
-            echo "<h3>Atividade 4</h3>";
+            echo "<h3>Atividade</h3>";
             echo "<h1>Headers de Segurança e Política de Segurança de Conteúdo (CSP)</h1>";
             echo "<br>";
             echo "<h3>Grupo Márcio Luiz e Ana Rebli</h3>";
