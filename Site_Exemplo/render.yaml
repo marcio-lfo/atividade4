@@ -4,8 +4,5 @@ services:
     env: php
     plan: free
     branch: main
-    buildCommand: composer install --prefer-dist --no-progress --no-suggest
-    startCommand: |
-      mkdir -p public
-      echo '<?php phpinfo(); ?>' > public/index.php
-      echo '<?php phpinfo(); ?>' > public/index.html
+    buildCommand: php -v
+    startCommand:  php -S 0.0.0.0:10000 -t ./Site_Exemplo
