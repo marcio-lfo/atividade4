@@ -5,4 +5,7 @@ services:
     plan: free
     branch: main
     buildCommand: composer install --prefer-dist --no-progress --no-suggest
-    startCommand: vendor/bin/heroku-php-apache2
+    startCommand: |
+      mkdir -p public
+      echo '<?php phpinfo(); ?>' > public/index.php
+      echo '<?php phpinfo(); ?>' > public/index.html
