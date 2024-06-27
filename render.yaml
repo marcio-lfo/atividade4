@@ -4,5 +4,5 @@ services:
     env: php
     plan: free
     branch: main
-    buildCommand: php -v
+    buildCommand: "true"
     startCommand: php -S 0.0.0.0:10000 -t ./Site_Exemplo
