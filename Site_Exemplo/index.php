@@ -1,5 +1,5 @@
 <?php
-// Atividade  headers de segurança
+// Definindo headers de segurança
 
 // Content Security Policy (CSP)
 header("Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline';");
@@ -12,6 +12,15 @@ header("X-Frame-Options: DENY");
 
 // X-XSS-Protection
 header("X-XSS-Protection: 1; mode=block");
+
+// Strict-Transport-Security
+header("Strict-Transport-Security: max-age=31536000; includeSubDomains");
+
+// Referrer-Policy
+header("Referrer-Policy: no-referrer-when-downgrade");
+
+// Permissions-Policy
+header("Permissions-Policy: geolocation=(self), microphone=()");
 
 ?>
 
